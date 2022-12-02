@@ -24,4 +24,36 @@
     top: 0;
     z-index: 2;
   }
+  header > h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Game area */
+  .game-area {
+    height: 85vh;
+    width: 99vw;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+  /* Scores */
+.score {
+    top: 155px;
+    width: 90vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .player-count, .computer-count {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+  } 
+
+  h3 {
+    font-size: 30px;
+  }
   
