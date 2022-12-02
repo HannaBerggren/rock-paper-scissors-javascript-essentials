@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body structure */
+  body {
+    height: 90%;
+    text-align: center;
+    font-family: el messiri, arial;
+    background: linear-gradient(
+        45deg, blue, red
+    );
+  }
+  
+  /* Header and Title */
+  header {
+    font-size: 20px;
+    color: white;
+    margin: 25px;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+  }
+  
