@@ -88,6 +88,15 @@ const winner = (player, computer) => {
           }
       }
   };
+  /**
+   * Function to run when game is over
+   */ 
+  const gameOver = (playerOptions, movesLeft) => {
+
+    const chooseMove = document.querySelector('.move');
+    const result = document.querySelector('.result');
+    const reloadButton = document.querySelector('.reload');
+     
 
 
 
