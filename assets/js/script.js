@@ -19,5 +19,25 @@ const playGame = () => {
   
 }  
 
+/** 
+ * Function to start play
+ */ 
+playerOptions.forEach(option) => {
+    option.addEventListener('click', function() {
+
+    const movesLeft = document.querySelector('.movesLeft'); moves++;
+    movesLeft.innerText = `Moves Left: ${10-moves}`;
+    
+      const choiceNumber = Math.floor(Math.random()*3);
+      const computerChoice = computerOptions[choiceNumber];
+    })
+}
+
+/** 
+ * Function to see who wins
+ */
+winner(this.innerText, computerChoice);
+
+
 
 
