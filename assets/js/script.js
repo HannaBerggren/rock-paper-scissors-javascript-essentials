@@ -16,13 +16,11 @@ const playGame = () => {
     const scissorButton = document.querySelector('.scissors');
     const playerOptions = [rockButton, paperButton, scissorButton];
     const computerOptions = ['rock', 'paper', 'scissors'];
-  
-}  
 
 /** 
  * Function to start play
  */ 
-playerOptions.forEach(option) => {
+playerOptions.forEach(option => {
     option.addEventListener('click', function() {
 
     const movesLeft = document.querySelector('.movesLeft'); moves++;
@@ -30,13 +28,21 @@ playerOptions.forEach(option) => {
     
       const choiceNumber = Math.floor(Math.random()*3);
       const computerChoice = computerOptions[choiceNumber];
-    })
-}
 
 /** 
  * Function to see who wins
  */
 winner(this.innerText, computerChoice);
+
+/** 
+ *  Function to end game efter 10 moves
+*/
+if(moves === 10) {
+    gameOver(playerOptions, movesLeft);
+  }
+});
+});
+};
 
 
 
