@@ -1,5 +1,5 @@
 /**
- * Create game variables
+ * create game variables
  */
 const game = () => {
     let playerScore = 0;
@@ -8,7 +8,7 @@ const game = () => {
 }
 
 /**
- * Create const variables to play the game
+ * create const variables to play the game
  */
 const playGame = () => {
     const rockButton = document.querySelector('.rock');
@@ -19,14 +19,5 @@ const playGame = () => {
   
 }  
 
-/** 
- * Function to play the game
- */  
-const playGame = () => {
-    const rockButton = document.querySelector('.rock');
-    const paperButton = document.querySelector('.paper');
-    const scissorButton = document.querySelector('.scissors');
-    const playerOptions = [rockButton, paperButton, scissorButton];
-    const computerOptions = ['rock', 'paper', 'scissors'];
-}
+
 
