@@ -96,7 +96,38 @@ const winner = (player, computer) => {
     const chooseMove = document.querySelector('.move');
     const result = document.querySelector('.result');
     const reloadButton = document.querySelector('.reload');
-     
 
+    playerOptions.forEach(option => {
+        option.style.display = 'none';
+      });
 
+      chooseMove.innerText = 'Game over!';
+      movesLeft.style.display = 'none';
+
+      if (playerScore > computerScore) {
+        result.style.fontSize = '3rem';
+        result.innerText = 'Congratulations! You won!';
+        result.style.color = '#5D9138';
+      } else if (playerScore < computerScore) {
+        result.style.fontSize = '3rem';
+        result.innerText = 'You lost the game!';
+        result.style.color = '#B13636';
+      } else {
+        result.style.fontSize = '3rem';
+        result.innerText = 'Tie';
+        result.style.color = '#6B787C';
+      }
+        reloadButton.innerText = 'Restart';
+        reloadButton.style.display = 'flex';
+        reloadButton.addEventListener('click', () => {
+          window.location.reload();
+      });
+  };
+  /**
+   * Calling playGame function
+   */ 
+  playGame();
+
+  // Calling game function
+  game();
 
